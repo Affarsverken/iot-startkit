@@ -27,5 +27,5 @@ https://docs.pycom.io/chapter/gettingstarted/installation/pymakr.html
 
 - `quick-start` - Hello World, a minimal example of how to join a LoRaWAN network and send your first uplink package
 - `door-sensor` - Send an uplink when a door is opened or closed
-- `motion-detection` - Send an uplink when movement is detected
+- `motion-detector` - Send an uplink when movement is detected
 - `temperature-and-humidity` - Periodically send temperature and humidity values
