@@ -11,8 +11,8 @@ lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
 print("DevEUI: " + binascii.hexlify(lora.mac()).decode('utf-8').upper())
 
 # OTAA authentication parameters, replace these with your own
-app_eui = binascii.unhexlify('0DAEE5D7675577E5')
-app_key = binascii.unhexlify('78346FD867A816645B66577964B230B5')
+app_eui = binascii.unhexlify('70B3D57ED000FF4A')
+app_key = binascii.unhexlify('9BD68F284A13699C5B0CB03C8DE25AEE')
 
 print("Joining network using OTAA (Over the Air Activation)")
 lora.join(activation=LoRa.OTAA, auth=(app_eui, app_key), timeout=0)
@@ -39,3 +39,4 @@ uplink = bytes([0x01])
 
 print("Sending uplink", binascii.hexlify(uplink).decode("utf-8"))
 s.send(uplink)
+print("Uplink sent")
