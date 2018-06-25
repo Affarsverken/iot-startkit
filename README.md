@@ -47,7 +47,9 @@ This next section will describe how to extract the DevEUI from your specific LoP
 
 To find out the Device EUI of your LoPy4, connect to device console in your Pymakr editor (see the [Software](#software) section if you have not already done this)
 
-Once you have a console open and can see the `>>>` prompt, paste the following code (also found in the file `get_deveui.py`):
+Once you have a console open and can see the `>>>` prompt, you can open the `get_deveui.py` file, right-click inside the code and select the option `Pymakr > Run current file`
+
+Or you can paste the code directly into the terminal:
 
 ```
 from network import LoRa
@@ -69,5 +71,4 @@ Where `0123456789abcdef` would be your Device EUI.
 
 - `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
 - `door-sensor` - Send an uplink when a door is opened or closed
-- `motion-detector` - Send an uplink when movement is detected
 - `temperature-and-humidity` - Periodically send temperature and humidity values
