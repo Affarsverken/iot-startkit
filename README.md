@@ -6,42 +6,46 @@ This repository contains a few code examples to get started with Affärsverkens 
 
 The startkit contains the following components:
 
--   Pycom LoPy4
--   Pycom Expansion Board 2.0
--   Pycom LoRa Antenna
--   Magnetic Contact Switch
--   PIR (motion) Sensor - `HC-SR501`
--   Temperature and Humidity Sensor - `DHT22` incl. 4.7K - 10K pullup resistor
--   Breadboard
--   Jumper Wires
+- [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
+- [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
+- Pycom LoRa Antenna
+- Magnetic Contact Switch
+- Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
+- Breadboard
+- Jumper Wires
 
 ## Software
 
-### Firmware updater
+You can find all the information about getting your machine set up for development in the [Pycom Documentation](https://docs.pycom.io/chapter/gettingstarted/installingsoftware.html)
 
-Link to Pycom Firmware Updater
+If you are using Windows 7 you may need to install a [driver](https://docs.pycom.io/chapter/gettingstarted/installation/drivers.html) for the Expansion Board.
 
-### IDE
+### LoPy4 Firmware Update
 
-To modify and upload the examples to a LoPy it is recommended to install the Pymakr plugin for either [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/)
+Before you begin, it is strongly recommended to upgrade the firmware of your LoPy4, you can find the update tool as well as instructions on how to perform an upgrade here:
 
-See the following link for instructions on how to set up your development environment:
+https://docs.pycom.io/chapter/gettingstarted/installation/firmwaretool.html
 
-https://docs.pycom.io/chapter/gettingstarted/installation/pymakr.html
+### Development Environment
 
-Once you have your editor set up, go into the Pymakr Global Settings and set your
+To upload the examples to a LoPy4 it is recommended to install the Pymakr plugin for either [Visual Studio Code](https://docs.pycom.io/chapter/pymakr/installation/vscode.html) or [Atom](https://docs.pycom.io/chapter/pymakr/installation/atom.html)
+
+Once you have followed one of the guides above your editor of choice should be ready to go, make sure you've also followed the _Connecting via Serial USB_ instructions in these guides.
 
 ## Getting started
 
-Before you can get started you need to register your device on The Things Network (TTN).
+### The Things Network
+
+Before you can connect to the testbed you need to register your device on The Things Network (TTN).
 Go to https://console.thethingsnetwork.org/applications and add an application for your startkit.
 
-Then go into the newly created application and register your LoPy4 device.
-Device ID can be set to anything you like, but Device EUI has to match your specific LoRa module. See the next section for details on how to do that.
+Then go into the newly created application and register your LoPy4 device. When filling out the registration, make sure that the _Device EUI_ field matches your LoRa4 module. A Device EUI is a unique identifier of a LoRa modem, similar to a MAC address of a network interface.
 
-### Figuring out Device EUI
+This next section will describe how to extract the DevEUI from your specific LoPy4.
 
-To find out the Device EUI of your LoPy4, connect to device console in your Pymakr editor (see the [Software](#software) section)
+#### Figuring out Device EUI
+
+To find out the Device EUI of your LoPy4, connect to device console in your Pymakr editor (see the [Software](#software) section if you have not already done this)
 
 Once you have a console open and can see the `>>>` prompt, paste the following code (also found in the file `get_deveui.py`):
 
@@ -63,7 +67,7 @@ Where `0123456789abcdef` would be your Device EUI.
 
 ## Code examples
 
--   `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
--   `door-sensor` - Send an uplink when a door is opened or closed
--   `motion-detector` - Send an uplink when movement is detected
--   `temperature-and-humidity` - Periodically send temperature and humidity values
+- `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
+- `door-sensor` - Send an uplink when a door is opened or closed
+- `motion-detector` - Send an uplink when movement is detected
+- `temperature-and-humidity` - Periodically send temperature and humidity values
