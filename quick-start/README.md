@@ -2,7 +2,7 @@
 
 This example will initiate a OTAA Join and then send an uplink packet.
 
-Make sure you have a console connected to your LoPy4 before pressing Upload
+**Important:** _Make sure you have connected the antenna correctly before proceeding_
 
 Example output:
 

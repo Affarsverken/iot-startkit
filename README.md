@@ -6,13 +6,13 @@ This repository contains a few code examples to get started with Affärsverkens 
 
 The startkit contains the following components:
 
-- [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
-- [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
-- Pycom LoRa Antenna
-- Magnetic Contact Switch
-- Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
-- Breadboard
-- Jumper Wires
+-   [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
+-   [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
+-   Pycom LoRa Antenna
+-   Magnetic Contact Switch
+-   Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
+-   Breadboard
+-   Jumper Wires
 
 ## Software
 
@@ -69,6 +69,12 @@ Where `0123456789abcdef` would be your Device EUI.
 
 ## Code examples
 
-- `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
-- `door-sensor` - Send an uplink when a door is opened or closed
-- `temperature-and-humidity` - Periodically send temperature and humidity values
+Before doing anything else, make sure you have connected the LoRa antenna
+
+![Antenna Connector](img/antenna_connector.jpg)
+
+To run the code examples, open its folder in your development environment and make sure the terminal is connected (you should see a `>>>` prompt). You should then be able to press "Upload" to upload and run the example.
+
+-   `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
+-   `door-sensor` - Send an uplink when a door is opened or closed
+-   `temperature-and-humidity` - Periodically send temperature and humidity values
