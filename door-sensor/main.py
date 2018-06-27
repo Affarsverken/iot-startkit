@@ -51,8 +51,11 @@ last_value = -1
 while True:
     # read pin value
     current_value = door_pin.value()
-
     if(current_value != last_value):
+        if(current_value == 1):
+            print("Door was opened")
+        else:
+            print("Door was closed")
         # pin has changed since last check
         last_value = current_value
 
