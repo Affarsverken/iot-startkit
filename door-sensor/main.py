@@ -5,8 +5,8 @@ import binascii
 from network import LoRa
 from machine import Pin
 
-# initialize pin `P23` as an input pin
-door_pin = Pin('P23', mode=Pin.IN, pull=Pin.PULL_UP)
+# initialize pin `G10` (marked on the expansion board) as an input pin
+door_pin = Pin('G10', mode=Pin.IN, pull=Pin.PULL_UP)
 
 # initialize LORAWAN mode for EU region
 lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
