@@ -4,7 +4,7 @@ This repository contains a few code examples to get started with Affärsverkens 
 
 ## Hardware
 
-The startkit contains the following components:
+The startkit contains the following assortment of parts
 
 -   [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
 -   [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
@@ -13,6 +13,12 @@ The startkit contains the following components:
 -   Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
 -   Breadboard
 -   Jumper Wires
+
+Pinout diagrams for the [LoPy4](https://docs.pycom.io/chapter/datasheets/downloads/lopy4-pinout.pdf) and the [Expansion Board](https://docs.pycom.io/chapter/datasheets/downloads/expansion2-pinout.pdf)
+
+The breadboard is used to make circuits without needing to solder. As showin in the image below the red and blue along the sides of the board are powerrails where you would connect power and ground for easy access across the board. The holes marked in green are connected row-wise `a` to `e` and `f` to `j`
+
+![Breadboard](img/breadboard.png)
 
 ## Software
 
@@ -25,6 +31,8 @@ If you are using Windows 7 you may need to install a [driver](https://docs.pycom
 Before you begin, it is strongly recommended to upgrade the firmware of your LoPy4, you can find the update tool as well as instructions on how to perform an upgrade here:
 
 https://docs.pycom.io/chapter/gettingstarted/installation/firmwaretool.html
+
+The code examples in this repository are tested on firmware version `1.18.0`
 
 ### Development Environment
 
