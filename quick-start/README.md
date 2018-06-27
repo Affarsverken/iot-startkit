@@ -19,3 +19,7 @@ Pycom MicroPython 1.18.0 [v1.8.6-849-046b350] on 2018-06-01; LoPy4 with ESP32
 Type "help()" for more information.
 >>>
 ```
+
+You can verify that the packet is received in TTN by going to the `Data` tab under your application
+
+![Data](../img/application_data.png)
