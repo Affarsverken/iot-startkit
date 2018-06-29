@@ -6,13 +6,13 @@ This repository contains a few code examples to get started with Affärsverkens 
 
 The startkit contains the following assortment of parts
 
--   [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
--   [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
--   Pycom LoRa Antenna
--   Magnetic Contact Switch
--   Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
--   Breadboard
--   Jumper Wires
+- [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
+- [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
+- Pycom LoRa Antenna
+- Magnetic Contact Switch
+- Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
+- Breadboard
+- Jumper Wires
 
 Pinout diagrams for the [LoPy4](https://docs.pycom.io/chapter/datasheets/downloads/lopy4-pinout.pdf) and the [Expansion Board](https://docs.pycom.io/chapter/datasheets/downloads/expansion2-pinout.pdf)
 
@@ -32,7 +32,11 @@ Before you begin, it is strongly recommended to upgrade the firmware of your LoP
 
 https://docs.pycom.io/chapter/gettingstarted/installation/firmwaretool.html
 
-The code examples in this repository are tested on firmware version `1.18.0`
+Make sure you select the type `stable` before continuing.
+
+![Firmware Upgrade](img/pycom_upgrade.png)
+
+The code examples in this repository are tested on stable firmware version `1.18.0`
 
 ### Development Environment
 
@@ -83,6 +87,6 @@ Before doing anything else, make sure you have connected the LoRa antenna
 
 To run the code examples, open its folder in your development environment and make sure the terminal is connected (you should see a `>>>` prompt). You should then be able to press "Upload" to upload and run the example.
 
--   `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
--   `door-sensor` - Send an uplink when a door is opened or closed
--   `temperature-and-humidity` - Periodically send temperature and humidity values
+- `quick-start` - A minimal example of how to join a LoRaWAN network and send your first uplink package
+- `door-sensor` - Send an uplink when a door is opened or closed
+- `temperature-and-humidity` - Periodically send temperature and humidity values
