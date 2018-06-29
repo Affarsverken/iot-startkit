@@ -49,6 +49,9 @@ Once you have followed one of the guides above your editor of choice should be r
 ### The Things Network
 
 Before you can connect to the testbed you need to register your device on The Things Network (TTN).
+
+You start by creating an [application](https://www.thethingsnetwork.org/docs/applications/) on your account, this TTN application will be where you register your devices as well as handle [integrations](https://www.thethingsnetwork.org/docs/applications/integrations.html) with external services like a HTTP endpoint or even IFTTT.
+
 Go to https://console.thethingsnetwork.org/applications and add an application for your startkit.
 
 Then go into the newly created application and register your LoPy4 device. When filling out the registration, make sure that the _Device EUI_ field matches your LoRa4 module. A Device EUI is a unique identifier of a LoRa modem, similar to a MAC address of a network interface.
