@@ -6,15 +6,15 @@ This repository contains a few code examples to get started with Affärsverkens 
 
 The startkit contains the following assortment of parts
 
-- [Pycom LoPy4](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html)
-- [Pycom Expansion Board 2.0](https://docs.pycom.io/chapter/gettingstarted/connection/lopy4.html#exp2)
+- [Pycom LoPy4](https://docs.pycom.io/gettingstarted/connection/lopy4)
+- Pycom Expansion Board 2.0
 - Pycom LoRa Antenna
 - Magnetic Contact Switch
 - Temperature and Humidity Sensor - [DHT22](https://learn.adafruit.com/dht/overview) incl. 4.7K - 10K pullup resistor
 - Breadboard
 - Jumper Wires
 
-Pinout diagrams for the [LoPy4](https://docs.pycom.io/chapter/datasheets/downloads/lopy4-pinout.pdf) and the [Expansion Board](https://docs.pycom.io/chapter/datasheets/downloads/expansion2-pinout.pdf)
+Pinout diagrams for the [LoPy4](https://docs.pycom.io/datasheets/development/lopy4) and the [Expansion Board](https://docs.pycom.io/datasheets/boards/expansion2)
 
 The breadboard is used to make circuits without needing to solder. As showin in the image below the red and blue along the sides of the board are powerrails where you would connect power and ground for easy access across the board. The holes marked in green are connected row-wise `a` to `e` and `f` to `j`
 
@@ -22,15 +22,15 @@ The breadboard is used to make circuits without needing to solder. As showin in 
 
 ## Software
 
-You can find all the information about getting your machine set up for development in the [Pycom Documentation](https://docs.pycom.io/chapter/gettingstarted/installingsoftware.html)
+You can find all the information about getting your machine set up for development in the [Pycom Documentation](https://docs.pycom.io/gettingstarted/installation)
 
-If you are using Windows 7 you may need to install a [driver](https://docs.pycom.io/chapter/gettingstarted/installation/drivers.html) for the Expansion Board.
+If you are using Windows 7 you may need to install a [driver](https://docs.pycom.io/gettingstarted/installation/drivers) for the Expansion Board.
 
 ### LoPy4 Firmware Update
 
 Before you begin, it is strongly recommended to upgrade the firmware of your LoPy4, you can find the update tool as well as instructions on how to perform an upgrade here:
 
-https://docs.pycom.io/chapter/gettingstarted/installation/firmwaretool.html
+https://docs.pycom.io/gettingstarted/installation/firmwaretool
 
 Make sure you select the type `stable` before continuing.
 
@@ -40,7 +40,7 @@ The code examples in this repository are tested on stable firmware version `1.18
 
 ### Development Environment
 
-To upload the examples to a LoPy4 it is recommended to install the Pymakr plugin for either [Visual Studio Code](https://docs.pycom.io/chapter/pymakr/installation/vscode.html) or [Atom](https://docs.pycom.io/chapter/pymakr/installation/atom.html)
+To upload the examples to a LoPy4 it is recommended to install the Pymakr plugin for either [Visual Studio Code](https://docs.pycom.io/pymakr/installation/vscode) or [Atom](https://docs.pycom.io/pymakr/installation/atom)
 
 Once you have followed one of the guides above your editor of choice should be ready to go, make sure you've also followed the _Connecting via Serial USB_ instructions in these guides.
 
