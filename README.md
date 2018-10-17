@@ -1,6 +1,10 @@
-# Affärsverken IOT Startkit
 
+
+# Affärsverken IOT Startkit
 This repository contains a few code examples to get started with Affärsverkens IOT Startkit.
+Questions related to the kit please contact iot@affarsverken.se
+
+
 
 ## Hardware
 
