@@ -4,11 +4,13 @@
 This repository contains a few code examples to get started with Affärsverkens IOT Startkit.
 Questions related to the kit please contact iot@affarsverken.se
 
-
+## Testbed
+The IoT testbed from Affärsverken is a public LoRaWAN base station that allows you to experiment (non comercial) with IOT hardware and software without having to ask for consent. It is set up to allow for quick and easy self-management using The Things Network platform.
+The base station gateway used for the testbed is a Kerlink Wirnet Station (https://www.kerlink.com/product/wirnet-station/) mounted on top of the roof of Campus Gräsvik 3: https://www.google.com/maps/place/56°10'59.8"N+15°35'36.0"E
 
 ## Hardware
 
-The startkit contains the following assortment of parts
+The startkit contains the following assortment of parts (can be orderd from m.nu)
 
 - [Pycom LoPy4](https://docs.pycom.io/gettingstarted/connection/lopy4)
 - Pycom Expansion Board 2.0
